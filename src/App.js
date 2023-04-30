@@ -50,10 +50,7 @@ function App() {
   //   setInputField("")
   //  }, [inputField]);
    useEffect(() => {
-    if(inputField===""){
-      setInputField(Op1)
-    }
-  else if (lastOperand !== "=")
+ if (lastOperand !== "=")
       setInputField(Op1+lastOperand);
       else 
       setInputField(lastOperand+Op1)

@@ -1,0 +1,74 @@
+.App {
+  background-color:darkcyan;
+  text-align: center;
+  min-height: 930px;
+}
+
+.App-header {
+  align-items: center;
+  text-align: left;
+  margin-left: 40%;
+  padding-top: 30px;
+  font-size: 45px;
+  font-family:Impact;
+  color:beige;
+  padding-bottom: 120px;
+}
+
+.Calculator-Header { 
+  padding-top: 60px;
+  position: sticky;
+  background: linear-gradient(to bottom right,#564,#dfe );
+  padding-bottom: 35px;
+  border-bottom: 3px solid black;
+}
+
+.Input-Field{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width:60%;
+  height: 55px;
+  background-color:#fff;
+  color:#444;
+  font-size: 45px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  font-weight: 850;
+  text-align: right;
+  border: 6px solid black;
+  border-radius: 8px;
+  cursor:default;
+}
+
+.Calculator-Buttons{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    width: 90px;
+    height: 60px;
+    color: #444;
+    font-size: 40px;
+    font-weight: 950;
+    border-radius: 8px;
+    background-color: #ccc;
+   margin: 10px 10px 10px 10px;
+
+}
+
+.Calculator-Body{
+  padding-top: 27.5px;
+  display: grid;
+  grid-template-columns: repeat(4,0.01fr);
+  justify-content: center;
+  padding-bottom: 30px;
+  background: linear-gradient(rgb(62, 62, 210),white);
+  border-top: 3px solid black;
+}
+
+.Calculator-Main{
+width: 30%;
+margin-left: 650px;
+align-items: center;
+border: 6px solid black;
+border-radius: 15px;
+
+}

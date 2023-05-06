@@ -58,8 +58,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <span style={{"margin-left":"30px"}}>FIXED</span><br></br>
-        <span style={{"text-decoration":"line-through"}}>BROKEN</span> CALCULATOR
+        CALCULATOR
       </header>
       <div className='Calculator-Main'>
       <div className='Calculator-Header'>

@@ -6,7 +6,7 @@ function App() {
   const [Op1,setOp1] = useState(0);
   const [Op2,setOp2] = useState(0);
   const [lastOperand,setLastOperand] = useState("+");
-  const calcButtons=["9","8","7","+","6","5","4","-","3","2","1","x","C","0","=","÷"]
+  const calcButtons=["9","8","7","+","6","5","4","–","3","2","1","x","C","0","=","÷"]
   const handleOnButtonPress= (value)=>{
     if(value === "C"){
       setInputField("")
@@ -14,7 +14,7 @@ function App() {
       setOp2(0);
       setLastOperand("+")
     }
-    else if(value === "+" || value === "-" || value === "x" || value === "÷"|| value === "="){
+    else if(value === "+" || value === "–" || value === "x" || value === "÷"|| value === "="){
       console.log(lastOperand)
       if(/^\d+$/.test(inputField.slice(-1)) || lastOperand==="="){
         var result
@@ -23,11 +23,14 @@ function App() {
           result=Op1+Op2;
           setOp1(result)
         }
+        else  if(lastOperand === "–"){
+          setOp1(Op1-Op2);
+        }
         else  if(lastOperand === "x"){
           setOp1(Op1*Op2);
         }
         else  if(lastOperand === "÷"){
-          setOp1(Op1/Op2);
+          setOp1((Op1/Op2).toFixed(6));
         }
         else if(lastOperand ==="="){
         setOp1(Op1)
@@ -38,9 +41,11 @@ function App() {
     }
     else{
       setOp2(Op2*10+parseInt(value));
-      if(inputField===""){
-      }
+      if(inputField==="0"){
+        setInputField(value)
+      }else{
     setInputField(inputField+value);
+      }
 
     }
    
@@ -50,7 +55,9 @@ function App() {
   //   setInputField("")
   //  }, [inputField]);
    useEffect(() => {
- if (lastOperand !== "=")
+    if(inputField==="")
+      setInputField("0")
+ else if (lastOperand !== "=")
       setInputField(Op1+lastOperand);
       else 
       setInputField(lastOperand+Op1)

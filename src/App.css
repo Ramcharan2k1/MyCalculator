@@ -1,5 +1,5 @@
 .App {
-  background-color:darkcyan;
+  background-color:purple;
   text-align: center;
   padding-bottom: 6.75%;
 
@@ -11,13 +11,13 @@
   padding-top: 30px;
   font-size: 35px;
   font-family:Impact;
-  color:beige;
+  color:yellow;
   padding-bottom: 120px;
 }
 
 .Calculator-Header { 
   padding-top: 60px;
-  background: linear-gradient(to bottom right,#564,#dfe );
+  background: linear-gradient(to bottom,orange,rgb(255, 255, 255) );
   padding-bottom: 35px;
   border-bottom: 3px solid black;
 }
@@ -27,11 +27,12 @@
   padding-left: 1%;
   width:70%;
   height: 20%;
-  background-color:#fff;
+  background-color:rgb(114, 165, 139);
   color:#444;
-  font-size: 25px;
+  font-size: 28px;
+  color:white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-  font-weight: 850;
+  font-weight: 900;
   text-align: right;
   border: 6px solid black;
   border-radius: 8px;
@@ -42,11 +43,11 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
     width: 85%;
     height: 85%;
-    color: #444;
+    color: black;
     font-size: 30px;
     font-weight: 950;
     border-radius: 8px;
-    background-color: #ccc;
+    background-color: #9594a7;
    margin: 10px 10px 10px 10px;
 
 }
@@ -57,7 +58,7 @@
   grid-template-columns: repeat(4,0.11fr);
   justify-content: center;
   padding-bottom: 30px;
-  background: linear-gradient(rgb(62, 62, 210),white);
+  background: linear-gradient(rgb(19, 127, 235),white);
   border-top: 3px solid black;
 }
 

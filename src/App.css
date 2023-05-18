@@ -1,24 +1,27 @@
 .App {
-  background-color:purple;
+  background-color: #111;
   text-align: center;
-  padding-bottom: 6.75%;
-
-}
+  height: 100vh;
+ }
 
 .App-header {
   align-items: center;
   text-align: center;
   padding-top: 30px;
-  font-size: 35px;
-  font-family:Impact;
-  color:yellow;
+  font-size: 3rem;
+  font-family:"DS-Digital";
+  font-weight: 500;
+  color:rgb(32, 112, 112);
   padding-bottom: 120px;
 }
 
 .Calculator-Header { 
+  background-image: url('../public/89fea0adcabacc1d01bbf59e363ae60f.jpg');
   padding-top: 60px;
-  background: linear-gradient(to bottom,orange,rgb(255, 255, 255) );
+  /* background: linear-gradient(to bottom,orange,rgb(255, 255, 255) ); */
   padding-bottom: 35px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   border-bottom: 3px solid black;
 }
 
@@ -30,9 +33,10 @@
   background-color:rgb(114, 165, 139);
   color:#444;
   font-size: 28px;
-  color:white;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-  font-weight: 900;
+  color:#333; 
+  font-family: "DS-Digital";
+  font-size: 2.2rem;
+  font-weight: 800;
   text-align: right;
   border: 6px solid black;
   border-radius: 8px;
@@ -47,18 +51,24 @@
     font-size: 30px;
     font-weight: 950;
     border-radius: 8px;
-    background-color: #9594a7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* background-color: #9594a7; */
+    background-image: url('../public/grunge-texture-for-background-dark-white-background-with-unique-texture-abstract-grainy-background-old-painted-wall-photo.jpg');
    margin: 10px 10px 10px 10px;
 
 }
 
 .Calculator-Body{
+  background-image: url('../public/35397a12ac254de12cd0c4538019ed5f.jpg');
   padding-top: 4%;
   display: grid;
   grid-template-columns: repeat(4,0.11fr);
   justify-content: center;
   padding-bottom: 30px;
-  background: linear-gradient(rgb(19, 127, 235),white);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* background: linear-gradient(rgb(19, 127, 235),white); */
   border-top: 3px solid black;
 }
 
@@ -66,6 +76,6 @@
 width: 70%;
 margin-left: 14%;
 border: 6px solid black;
-border-radius: 15px;
+border-radius: 20px;
 
 }
